@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="King SMP - Ultimate Lifesteal Minecraft Server. Custom economy, intense PvP, ranks, kits, and weekly events.">
+  <meta name="theme-color" content="#0a0a2a">
+  <title>King SMP | Lifesteal Minecraft Server</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/assets/icon.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="particles" id="particles"></div>
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <span class="logo-icon">👑</span>
+      <span class="logo-text">KING SMP</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#ranks" class="nav-link">Ranks</a>
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#discord" class="nav-link">Discord</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✦ LIFESTEAL SEASON 3 ✦</div>
+      <h1 class="hero-title">
+        <span class="title-line">👑</span>
+        <span class="gold-gradient">King SMP</span>
+      </h1>
+      <p class="hero-subtitle" id="typingText"></p>
+      <div class="ip-container">
+        <div class="ip-card">
+          <span class="ip-address" id="ipAddress">theking.mcsh.io</span>
+          <button class="copy-ip-btn" id="copyIpBtn">
+            <span>Copy IP</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn-primary">
+          <span>✨ Get Rank</span>
+        </a>
+        <a href="https://discord.gg/DPcmDR3mA" target="_blank" class="btn-secondary">
+          <span>💬 Join Discord</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span class="scroll-text">Scroll Down</span>
+      <div class="scroll-wheel">
+        <div class="wheel-move"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">🔥</span>
+        Server Features
+      </h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3>Lifesteal Core</h3>
+          <p>Steal hearts on kill, risk everything</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Player Economy</h3>
+          <p>Custom shops, auctions & trade</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3>Ranked PvP</h3>
+          <p>Arenas, leaderboards & rewards</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Weekly Events</h3>
+          <p>KOTL, Spleef, Drop Parties</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Anti-Cheat</h3>
+          <p>Fair play guaranteed</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3>Daily Rewards</h3>
+          <p>Login bonuses & vote crates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ranks" class="section ranks-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">👑</span>
+        Rank & Kit Progression
+      </h2>
+      <div class="ranks-grid">
+        <div class="rank-card" data-rank="vip">
+          <div class="rank-badge vip-badge">VIP</div>
+          <div class="rank-kit">📦 VIP Kit: Iron+, Food, Tools</div>
+          <div class="rank-perks">+1 heart, /fly, colored name</div>
+        </div>
+        <div class="rank-card" data-rank="elite">
+          <div class="rank-badge elite-badge">ELITE</div>
+          <div class="rank-kit">⚡ Elite Kit: Diamond Gear, XP</div>
+          <div class="rank-perks">+2 hearts, /feed, particle trail</div>
+        </div>
+        <div class="rank-card" data-rank="legend">
+          <div class="rank-badge legend-badge">LEGEND</div>
+          <div class="rank-kit">🏆 Legend Kit: Enchanted Diamond, Potions</div>
+          <div class="rank-perks">+3 hearts, /enderchest, glow effect</div>
+        </div>
+        <div class="rank-card" data-rank="emperor">
+          <div class="rank-badge emperor-badge">EMPEROR</div>
+          <div class="rank-kit">🔥 Emperor Kit: Netherite Gear, Totems</div>
+          <div class="rank-perks">+4 hearts, /workbench, private warp</div>
+        </div>
+        <div class="rank-card king-card" data-rank="king">
+          <div class="rank-badge king-badge">KING 👑</div>
+          <div class="rank-kit">⭐ KING Kit: Full Netherite+God Apple</div>
+          <div class="rank-perks">+5 hearts, /god, fly speed, crown</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" class="section shop-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">🛒</span>
+        In-Game Shop
+      </h2>
+      <p class="shop-description">Purchase ranks using in-game coins — no real money required! DM <strong>Owner°Aarav</strong> on Discord after buying.</p>
+      <div class="shop-grid">
+        <div class="shop-product" data-rank="VIP">
+          <h3>VIP Package</h3>
+          <div class="price-tag">💰 15,000 Coins</div>
+          <div class="product-desc">VIP Rank + VIP Kit + /fly</div>
+          <button class="buy-btn" data-rank="VIP">Purchase</button>
+        </div>
+        <div class="shop-product" data-rank="Elite">
+          <h3>Elite Package</h3>
+          <div class="price-tag">💰 35,000 Coins</div>
+          <div class="product-desc">Elite Rank + Elite Kit + /feed</div>
+          <button class="buy-btn" data-rank="Elite">Purchase</button>
+        </div>
+        <div class="shop-product" data-rank="Legend">
+          <h3>Legend Package</h3>
+          <div class="price-tag">💰 70,000 Coins</div>
+          <div class="product-desc">Legend Rank + Legend Kit + /ec</div>
+          <button class="buy-btn" data-rank="Legend">Purchase</button>
+        </div>
+        <div class="shop-product" data-rank="Emperor">
+          <h3>Emperor Package</h3>
+          <div class="price-tag">💰 120,000 Coins</div>
+          <div class="product-desc">Emperor Rank + Emperor Kit + private warp</div>
+          <button class="buy-btn" data-rank="Emperor">Purchase</button>
+        </div>
+        <div class="shop-product shop-special" data-rank="KING">
+          <h3>👑 KING Package</h3>
+          <div class="price-tag">💰 250,000 Coins</div>
+          <div class="product-desc">KING Rank + KING Kit + /god mode</div>
+          <button class="buy-btn" data-rank="KING">Purchase</button>
+        </div>
+      </div>
+      <div class="shop-note">✨ Coins earned by playing, voting, and killing mobs/players. Type <code>/balance</code> in-game.</div>
+    </div>
+  </section>
+
+  <section class="section staff-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">⚜️</span>
+        Staff Team
+      </h2>
+      <div class="staff-grid">
+        <div class="staff-card">
+          <div class="staff-role">Owner</div>
+          <div class="staff-name">Aarav7111</div>
+          <div class="staff-desc">Founder & Lead Developer</div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-role">Co-Owner</div>
+          <div class="staff-name">Siddhant</div>
+          <div class="staff-desc">Management & Events</div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-role">Admin</div>
+          <div class="staff-name">Recruiting</div>
+          <div class="staff-desc">Join Discord to apply!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section rules-section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-icon">📜</span>
+        Server Rules
+      </h2>
+      <div class="rules-grid">
+        <div class="rule-item">✅ No hacking, exploiting, or cheating</div>
+        <div class="rule-item">✅ No duping or abusing glitches</div>
+        <div class="rule-item">✅ Respect all players & staff</div>
+        <div class="rule-item">✅ No toxic behavior or spam</div>
+        <div class="rule-item">✅ PvP allowed but no spawn killing</div>
+        <div class="rule-item">✅ Have fun and build epic things!</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="discord" class="section discord-cta">
+    <div class="container discord-container">
+      <div class="discord-content">
+        <h2>Join our Community</h2>
+        <p>Get updates, report issues, vote for features & meet other warriors.</p>
+        <a href="https://discord.gg/DPcmDR3mA" target="_blank" class="discord-btn-large">Join Discord Server →</a>
+        <div class="discord-tag">discord.gg/DPcmDR3mA</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>👑 King SMP — Where Legends Rise</p>
+      <p>Server IP: <strong>theking.mcsh.io</strong> | 1.12.2+ Java</p>
+      <p>&copy; 2026 King SMP. Regards, Owner Aarav7111</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="purchaseModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalRankTitle">VIP Package</h3>
+        <button class="modal-close" id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>✅ Purchase request for <strong id="modalRankName">VIP Rank</strong> received.</p>
+        <p>📩 <strong>DM Owner°Aarav</strong> on Discord with your Minecraft username and proof of coins.</p>
+        <div class="modal-warning">💡 No real payment required — only in-game currency!</div>
+        <div class="modal-discord-link">
+          <a href="https://discord.gg/DPcmDR3mA" target="_blank" class="modal-discord-btn">Open Discord</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
